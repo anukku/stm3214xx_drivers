@@ -1,5 +1,5 @@
 📘 Embedded Systems Bare-Metal Programming  
-This repository contains my progress and projects from the Embedded Systems Bare-Metal Programming course on Udemy. The focus is on developing low-level embedded systems software for the STM32 microcontroller, without using HAL or any other high-level libraries—just bare-metal C. The goal is to interface directly with the hardware by manipulating registers, building a deeper understanding of microcontroller architectures, and writing highly optimized code.
+This repository contains my progress and projects for Embedded Systems Bare-Metal Programming. The focus is on developing low-level embedded systems software for the STM32 microcontroller, without using HAL or any other high-level libraries—just bare-metal C. The goal is to interface directly with the hardware by manipulating registers, building a deeper understanding of microcontroller architectures, and writing highly optimized code.
   
 🚀 Overview  
 Throughout this course, I am working with the STM32L4 series microcontrollers to implement various low-level drivers and functions from scratch. By writing bare-metal C code, I am learning to control the microcontroller’s peripherals and perform key tasks, such as GPIO handling, UART communication, and managing system clocks, without relying on any abstraction layers.
