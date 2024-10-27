@@ -2,36 +2,28 @@
 #include <stdio.h>
 #include <stdint.h>
 #include "uart.h"
+#include "adc.h"
 
-#define GPIOBEN				(1U<<1)
-#define PIN13				(1U<<13)
+void pseudo_dly(void);
 
-#define LED_PIN				PIN13
-//PA2 & PA3 for UART's RX and TX
-
-char key;
+int x;
 int main(void)
 {
-
-	RCC->AHB2ENR |= GPIOBEN;
-
-	GPIOB->MODER |= (1U<<26);
-	GPIOB->MODER &= ~(1U<<27);
-	uart2_rxtx_init();
-
+	pa4_adc1_init();
+	pseudo_dly();
+	start_conversion();
 	while(1)
 	{
-		key = uart2_read();
-		if(key == '1')
-		{
-			GPIOB->BSRR = LED_PIN;
-			uart2_write('x');
-		}
-		else
-		{
-			GPIOB->BSRR = (1U<<29);
-		}
 
+		x = adc_read();
+	}
+}
+
+void pseudo_dly(void)
+{
+	int y;
+	for(int i = 0; i< 800000; i++){
+		y++;
 	}
 }
 
