@@ -1,5 +1,3 @@
-#include "stdint.h"
-#include "stm32l4xx.h"
 #include "uart.h"
 
 #define SYS_FREQ			4000000

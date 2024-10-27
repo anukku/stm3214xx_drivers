@@ -1,7 +1,7 @@
-../Src/uart.c:19:5:__io_putchar	16	static
-../Src/uart.c:30:6:uart2_write	16	static
-../Src/uart.c:43:6:uart2_read	4	static
-../Src/uart.c:56:6:uart2_rxtx_init	8	static
-../Src/uart.c:100:6:uart2_tx_init	8	static
-../Src/uart.c:141:13:uart_set_baudrate	24	static
-../Src/uart.c:155:17:compute_uart_bd	16	static
+../Src/uart.c:16:5:__io_putchar	16	static
+../Src/uart.c:27:6:uart2_write	16	static
+../Src/uart.c:40:6:uart2_read	4	static
+../Src/uart.c:53:6:uart2_rxtx_init	8	static
+../Src/uart.c:97:6:uart2_tx_init	8	static
+../Src/uart.c:138:13:uart_set_baudrate	24	static
+../Src/uart.c:152:17:compute_uart_bd	16	static
