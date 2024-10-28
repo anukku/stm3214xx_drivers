@@ -1,7 +1,7 @@
 #ifndef ADC_H_
 #define ADC_H_
 
-#include "stdint.h"
+#include <stdint.h>
 #include "stm32l4xx.h"
 
 /* Clock and GPIO register definitions */
