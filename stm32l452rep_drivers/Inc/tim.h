@@ -7,9 +7,9 @@
 /* Timer configuration register bits */
 #define CR1_CEN			(1U<<0)
 #define SR_UIF			(1U<<0)
+#define DIRE_UIE		(1U<<0)
 
 void tim1_1hz_init(void);
-void tim2_output_compare(void);
-void tim1_output_compare(void);
+void tim1_1hz_interrupt_init(void);
 
 #endif
