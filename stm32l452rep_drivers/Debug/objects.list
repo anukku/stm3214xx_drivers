@@ -1,5 +1,6 @@
 "./Src/adc.o"
 "./Src/exti.o"
+"./Src/i2c.o"
 "./Src/main.o"
 "./Src/syscalls.o"
 "./Src/sysmem.o"

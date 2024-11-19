@@ -7,6 +7,7 @@
 C_SRCS += \
 ../Src/adc.c \
 ../Src/exti.c \
+../Src/i2c.c \
 ../Src/main.c \
 ../Src/syscalls.c \
 ../Src/sysmem.c \
@@ -18,6 +19,7 @@ C_SRCS += \
 OBJS += \
 ./Src/adc.o \
 ./Src/exti.o \
+./Src/i2c.o \
 ./Src/main.o \
 ./Src/syscalls.o \
 ./Src/sysmem.o \
@@ -29,6 +31,7 @@ OBJS += \
 C_DEPS += \
 ./Src/adc.d \
 ./Src/exti.d \
+./Src/i2c.d \
 ./Src/main.d \
 ./Src/syscalls.d \
 ./Src/sysmem.d \
@@ -45,7 +48,7 @@ Src/%.o Src/%.su Src/%.cyclo: ../Src/%.c Src/subdir.mk
 clean: clean-Src
 
 clean-Src:
-	-$(RM) ./Src/adc.cyclo ./Src/adc.d ./Src/adc.o ./Src/adc.su ./Src/exti.cyclo ./Src/exti.d ./Src/exti.o ./Src/exti.su ./Src/main.cyclo ./Src/main.d ./Src/main.o ./Src/main.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su ./Src/systick.cyclo ./Src/systick.d ./Src/systick.o ./Src/systick.su ./Src/systickinterrupt.cyclo ./Src/systickinterrupt.d ./Src/systickinterrupt.o ./Src/systickinterrupt.su ./Src/tim.cyclo ./Src/tim.d ./Src/tim.o ./Src/tim.su ./Src/uart.cyclo ./Src/uart.d ./Src/uart.o ./Src/uart.su
+	-$(RM) ./Src/adc.cyclo ./Src/adc.d ./Src/adc.o ./Src/adc.su ./Src/exti.cyclo ./Src/exti.d ./Src/exti.o ./Src/exti.su ./Src/i2c.cyclo ./Src/i2c.d ./Src/i2c.o ./Src/i2c.su ./Src/main.cyclo ./Src/main.d ./Src/main.o ./Src/main.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su ./Src/systick.cyclo ./Src/systick.d ./Src/systick.o ./Src/systick.su ./Src/systickinterrupt.cyclo ./Src/systickinterrupt.d ./Src/systickinterrupt.o ./Src/systickinterrupt.su ./Src/tim.cyclo ./Src/tim.d ./Src/tim.o ./Src/tim.su ./Src/uart.cyclo ./Src/uart.d ./Src/uart.o ./Src/uart.su
 
 .PHONY: clean-Src
 
